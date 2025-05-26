@@ -25,7 +25,9 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion flutter.compileSdkVersion
+    ndkVersion flutter.ndkVersion
+    namespace 'com.kurenai7968.volume_controller'
 
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
