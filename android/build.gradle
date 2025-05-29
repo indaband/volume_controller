@@ -29,6 +29,11 @@ android {
     ndkVersion flutter.ndkVersion
     namespace 'com.kurenai7968.volume_controller'
 
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
     }
